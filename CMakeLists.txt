@@ -9,7 +9,8 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 add_executable(HDRM main.cpp
         NeuralNetwork.cpp
         NeuralNetwork.h
-        MNISTReaders.cpp)
+        MNISTReaders.cpp
+        MNISTReader.h)
 
 configure_file(train-images-idx3-ubyte train-images-idx3-ubyte COPYONLY)
 configure_file(train-labels-idx1-ubyte train-labels-idx1-ubyte COPYONLY)

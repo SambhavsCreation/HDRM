@@ -5,7 +5,7 @@
 #include <algorithm>
 #include <string>
 #include "NeuralNetwork.h"
-#include "MNISTReaders.cpp"
+#include "MNISTReader.h"
 
 int main() {
     std::vector<std::vector<double>> trainingImages;
@@ -20,7 +20,7 @@ int main() {
 
     NeuralNetwork nn(inputSize, hiddenSize, outputSize);
 
-    int epochs = 5;
+    int epochs = 6;
     double learningRate = 0.1;
 
     nn.train(trainingImages, trainingLabels, epochs, learningRate);
